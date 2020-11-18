@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "file",
+      "type": "com.shop.resource.FileUpload",
+      "sourceType": "com.shop.resource.FileUpload"
+    }
+  ],
+  "properties": [
+    {
+      "name": "file.image-server-url",
+      "type": "java.lang.String",
+      "sourceType": "com.shop.resource.FileUpload"
+    },
+    {
+      "name": "file.image-user-face-location",
+      "type": "java.lang.String",
+      "sourceType": "com.shop.resource.FileUpload"
+    }
+  ],
+  "hints": []
+}

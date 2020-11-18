@@ -1,0 +1,3 @@
+com\shop\controller\SSOController.class
+com\shop\CorsConfig.class
+com\shop\SSOApplication.class

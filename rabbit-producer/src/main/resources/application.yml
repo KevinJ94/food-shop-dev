@@ -1,0 +1,26 @@
+server:
+  port: 44000
+spring:
+  rabbitmq:
+    host: 192.168.199.101
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /
+    publisher-returns: true
+    publisher-confirms: true
+    template:
+      mandatory: true
+    listener:
+      simple:
+        default-requeue-rejected: false
+
+
+  datasource:                                           # 数据源的相关配置
+    type: com.zaxxer.hikari.HikariDataSource          # 数据源类型：HikariCP
+    driver-class-name: com.mysql.jdbc.Driver          # mysql驱动
+    #    url: jdbc:mysql://localhost:3306/foodie-shop-dev?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    username: root
+    #    password: root
+    url: jdbc:mysql://localhost:3306/food-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+    password: china666

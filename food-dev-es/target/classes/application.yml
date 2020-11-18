@@ -1,0 +1,31 @@
+server:
+  port: 8033
+
+management:
+  health:
+    elasticsearch:
+      enabled: false
+spring:
+
+  redis:
+    password: china666
+    cluster:
+      nodes: 192.168.199.101:6379,192.168.199.102:6379, 192.168.199.103:6379, 192.168.199.104:6379, 192.168.199.105:6379, 192.168.199.106:6379
+
+  datasource:                                           # 数据源的相关配置
+    type: com.zaxxer.hikari.HikariDataSource          # 数据源类型：HikariCP
+    driver-class-name: com.mysql.jdbc.Driver          # mysql驱动
+#    url: jdbc:mysql://localhost:3306/foodie-shop-dev?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true
+    username: root
+#    password: root
+    url: jdbc:mysql://192.168.199.106:8066/food-shop?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+    password: root
+  data:
+
+    elasticsearch:
+      cluster-name: food-shop-elasticsearch
+      cluster-nodes: 192.168.199.200:9300
+      repositories:
+        enabled: true
+      properties:
+        xpack.security.user: elastic:china666

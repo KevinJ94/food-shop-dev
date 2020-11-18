@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="food-dev-common" />
+        <module name="food-dev-service" />
+        <module name="kafka-consumer" />
+        <module name="food-dev-mapper" />
+        <module name="food-dev-sso" />
+        <module name="kafka-producer" />
+        <module name="food-dev-mq-producer" />
+        <module name="food-dev-pojo" />
+        <module name="food-dev-es" />
+        <module name="food-dev-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="food-dev-mq-producer" target="1.8" />
+      <module name="food-dev-rabbit" target="1.8" />
+      <module name="rabbit-common" target="1.8" />
+      <module name="rabbit-producer" target="1.8" />
+      <module name="sso" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="food-dev-api" options="-parameters" />
+      <module name="food-dev-common" options="-parameters" />
+      <module name="food-dev-es" options="-parameters" />
+      <module name="food-dev-mapper" options="-parameters" />
+      <module name="food-dev-mq-producer" options="-parameters" />
+      <module name="food-dev-pojo" options="-parameters" />
+      <module name="food-dev-rabbit" options="-parameters" />
+      <module name="food-dev-service" options="-parameters" />
+      <module name="food-dev-sso" options="-parameters" />
+      <module name="kafka-consumer" options="-parameters" />
+      <module name="kafka-producer" options="-parameters" />
+      <module name="rabbit-common" options="-parameters" />
+      <module name="rabbit-producer" options="-parameters" />
+      <module name="sso" options="-parameters" />
+    </option>
+  </component>
+</project>

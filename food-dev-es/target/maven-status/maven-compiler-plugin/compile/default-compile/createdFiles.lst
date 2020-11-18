@@ -1,0 +1,9 @@
+com\shop\controller\ItemsController.class
+com\shop\service\ItemsESService.class
+pojo\Items.class
+com\shop\service\impl\ItemsESServiceImpl.class
+com\shop\ESConfig.class
+com\shop\ESApplication.class
+com\shop\CorsConfig.class
+com\shop\aspect\ServiceLogAspect.class
+com\shop\service\impl\ItemsESServiceImpl$1.class
